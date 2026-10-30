@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Sparkles } from 'lucide-react';
 
 const messages = [
   'Free Shipping Across India | No Hidden Charges',

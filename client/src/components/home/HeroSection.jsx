@@ -177,7 +177,7 @@ export default function HeroSection() {
             alt="Zimor India luxury workbag"
             width="1080"
             height="1448"
-            fetchpriority="high"
+            fetchPriority="high"
             decoding="async"
             className="h-full w-full object-cover object-top"
           />
@@ -256,7 +256,7 @@ export default function HeroSection() {
             alt="Zimor India luxury workbag"
             width="1080"
             height="1448"
-            fetchpriority="high"
+            fetchPriority="high"
             decoding="async"
             className="h-full w-full object-cover object-top"
           />

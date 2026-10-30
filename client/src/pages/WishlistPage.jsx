@@ -68,6 +68,7 @@ export default function WishlistPage() {
         await api.put('/wishlist', { products: merged });
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated]);
 
   const handleAddToCart = (product) => {

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Send, Heart } from 'lucide-react';
 import api from '../../lib/axios';
-import Button from '../ui/Button';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');

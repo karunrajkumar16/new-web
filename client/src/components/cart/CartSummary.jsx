@@ -3,7 +3,7 @@ import useCartStore from '../../stores/cartStore';
 import CouponInput from './CouponInput';
 
 export default function CartSummary() {
-  const { subtotal, discount, shipping, total, items } = useCartStore();
+  const { subtotal, discount, total, items } = useCartStore();
   const isEmpty = items.length === 0;
 
   return (

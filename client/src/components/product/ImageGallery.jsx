@@ -15,7 +15,7 @@ export default function ImageGallery({ images = [] }) {
           sizes="(max-width: 768px) 100vw, 50vw"
           alt={gallery[activeIndex]?.alt || 'Product'}
           className="w-full object-contain"
-          fetchpriority="high"
+          fetchPriority="high"
           decoding="async"
           draggable={false}
         />

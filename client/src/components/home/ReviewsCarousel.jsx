@@ -143,7 +143,7 @@ export default function ReviewsCarousel() {
   const [showForm, setShowForm] = useState(false);
   const [dir, setDir] = useState(1);
 
-  const { data, isLoading } = useQuery({
+  const { data } = useQuery({
     queryKey: ['reviews-recent'],
     queryFn: () => api.get('/reviews/recent').then(r => r.data.data.reviews),
     staleTime: 2 * 60 * 1000,

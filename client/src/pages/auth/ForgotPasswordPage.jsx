@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Mail, CheckCircle } from 'lucide-react';
-import { toast } from 'sonner';
+import { ArrowLeft, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import { forgotPasswordSchema } from '../../schemas/authSchemas';
@@ -29,7 +28,7 @@ export default function ForgotPasswordPage() {
     try {
       await api.post('/auth/forgot-password', data);
       setSubmitted(true);
-    } catch (err) {
+    } catch {
       // Show success even on error to prevent email enumeration
       setSubmitted(true);
     } finally {

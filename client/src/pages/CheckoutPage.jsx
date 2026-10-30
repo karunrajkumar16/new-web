@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { Package, CreditCard, CheckCircle } from 'lucide-react';
 import useAuthStore from '../stores/authStore';
 import useCartStore from '../stores/cartStore';

@@ -1,0 +1,14 @@
+{
+  "name": "zimor-india-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start:server": "npm --prefix server start",
+    "seed": "npm --prefix server run seed",
+    "sync:live": "npm --prefix server run sync:live",
+    "build:client": "npm --prefix client run build",
+    "lint:client": "npm --prefix client run lint"
+  }
+}
